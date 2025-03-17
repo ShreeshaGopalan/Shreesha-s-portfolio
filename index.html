@@ -16,7 +16,7 @@
            <img src="./images/logo (2).png" alt="logo"> 
         </nav>
     <div>
-        <h1 class="main-msg">Hey - I am Shreesha. <br> A purpose-driven <br> Web <span class="designer"> Designer</span> .</h1>     
+        <h1 class="main-msg">Hey - I am Shreesha. <br> A purpose-driven <br> Web <span id="role" class="designer"> Designer</span> .</h1>     
     </div>
     <div class="para">
         <p>I create digital experiences that merge <br>aesthetics and purpose.</p>
@@ -37,40 +37,61 @@
             <h2>About Me</h2>
             <div class="card-container">
                 <div class="card">
-                    <p class="card-content">Greetings! I’m Shreesha, navigating the dynamic world of Web design, where every element serves a purpose. With a strong focus on user experience and a knack for transforming ideas into visually intuitive interfaces, I approach each project with a passion for crafting something impactful.</p>
+                    <p class="card-content">Greetings! I’m Shreesha, a passionate <strong>Designer & Developer</strong> navigating the intersection of creativity and functionality. I craft intuitive user experiences by blending design aesthetics with seamless code, ensuring that every element serves a purpose.</p>
 
                 </div>
                 <div class="card">
-                    <p class="card-content">My design journey includes an enriching internship at Open Weaver, where I worked on creating user-friendly templates and exciting client projects. Prior to that, I spent two years at Scribbles, designing functional and stylish school uniforms, which helped me develop a keen sense of how aesthetics and practicality can come together to meet user needs.</p>
+                    <p class="card-content">My journey includes an enriching internship at Open Weaver, where I designed user-friendly templates and worked on exciting client projects. Prior to that, I spent two years at Scribbles, creating functional yet stylish school uniforms—an experience that honed my ability to balance usability with aesthetics.</p>
 
                 </div>
                 <div class="card">
-                    <p class="card-content">I work on HTML, CSS, Figma, and Illustrator, blending design and functionality to deliver seamless user experiences. Constantly learning and evolving, I aim to stay ahead of design trends while creating work that’s both timeless and innovative.</p>
+                    <p class="card-content">I work with <strong>HTML, CSS, JavaScript, Node.js, PostgreSQL, React.js, Figma, and Illustrator</strong>, bridging the gap between design and development. Constantly evolving, I aim to build products that are both visually engaging and technically robust.</p>
 
                 </div>
                 
             </div>
 
-        </div>
-        
-
-
+        </div>      
     </section>
 
-
-<section>
-    <h2>My Stack</h2>
-    <div class="stack">
-        <img src="./images/figma (1).png" alt="figma">
-        <img src="./images/cc (1).png" alt="creative cloud">
-        <img src="./images/html (1).png" alt="html">
-        <img src="./images/css (2).png" alt="css">
-    </div>
-</section>
 
 
 <section>
     <h2>My Works</h2>
+    <div class="dev-projects">
+    <h3 class="sub-heading">Dev Projects</h3>
+    <div class="work-container">
+        <div class="project">
+            <img class="work-image"  src="./images/personal-portfolio.jpg">
+            <div class="card-content">
+               <h3>Personal Portfolio</h3>
+               <p>A showcase of my work, built with HTML, CSS, and JavaScript. The very site you’re viewing!</p>
+            </div>
+            <a href="" class="button">View</a>
+        </div>
+
+        <div class="project">
+            <img class="work-image"  src="./images/blog.jpg">
+            <div class="card-content">
+               <h3>InkWave</h3>
+               <p>A blog web application where users can create and read blogs built using <strong>Node.js, Express, EJS, HTML and CSS</strong>.
+            </p>
+            </div>
+            <a href="http://13.61.230.172:3000/" class="button">View</a>
+        </div>
+
+        <div class="project">
+            <img class="work-image"  src="./images/tasty.jpg">
+            <div class="card-content">
+               <h3>TastyTrails</h3>
+               <p>A recipe search and save application, built using <strong>Node.js, Express, EJS, PostgreSQL and the Spoonacular API</strong>.</p>
+            </div>
+            <a href="http://13.61.230.172:4000/" class="button">View</a>
+        </div>
+    </div>
+</div>
+    <div class="design-projects">
+    <h3 class="sub-heading">Design Projects</h3>
     <div class="work-container">
         <div class="project">
             <img class="work-image"  src="./images/web.png">
@@ -98,9 +119,10 @@
             </div>
             <a href="https://www.behance.net/gallery/197174881/Shared-Living-Space-Finder-App" class="button">View</a>
         </div>
-
-        
     </div>
+</div>
+
+
 </section>
 
 
@@ -114,6 +136,17 @@
     <hr> <br>
     <p>© 2024 Shreesha Gopalan</p>
 </footer>
+
+<script>
+    const roleElement = document.getElementById("role");
+    const roles = ["Designer", "Developer"];
+    let index = 0;
+  
+    setInterval(() => {
+      index = (index + 1) % roles.length;
+      roleElement.textContent = roles[index];
+    }, 1000); // Flips every 2 seconds
+  </script>
 </body>
 </html>
 

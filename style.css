@@ -73,6 +73,8 @@ h2{
     margin-top: 40px;
 }
 
+
+
 @media(max-width: 700px){
     
     .main-msg{
@@ -161,35 +163,20 @@ h2{
 }
 
 
-/*stack*/
-.stack img{
-    height: 100px;
-}
 
-.stack{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-@media(max-width: 700px){
-    .stack img{
-        height: 60px;
-    } 
-    .stack{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    h2{
-        font-size: 24px;
-    }
-}
 
 /*work*/
 
 .work-image{
    width: 100%;
    height: auto;
+}
+
+.sub-heading{
+    font-size: 24px;
+    color: #D9D9D9;
+    text-align: center;
+    padding: 10px;
 }
 
 .project{
@@ -220,12 +207,18 @@ h2{
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
  
 }
 
+.design-projects{
+    margin-top: 40px;
+}
+
 @media(max-width: 700px){
+    .sub-heading{
+        font-size: 20px;
+    }
     .project h3{
         font-size: 14px;
     }
